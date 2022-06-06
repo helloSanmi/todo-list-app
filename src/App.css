@@ -1,5 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@400,700;&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.app-form {
+  /* width: 100%; */
+  /* max-width: 500px; */
+  /* padding: 15px; */
+  margin: auto;
+}
+
+.form-input {
+  /* z-index: 2; */
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 15px 0;
+}
+
+.todo-app {
   text-align: center;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.todo-app input[type=text] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  /* margin: 10px 5px 10px 5px; */
+}
+
+.todo {
+  background-color: #282c34;
+  color: white;
+  
+}
+
+.todo-app {
+  border: white solid 1px;
+}
+
+.btn {
+  background-color: rgb(68, 68, 184);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.btn-del {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 .App-logo {
@@ -7,15 +88,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 10vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +98,38 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.display {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgb(238, 236, 232);
+  color: black;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 5px 0px 5px 0;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.styleList {
+  display: flex;
+  /* border: rgb(28, 28, 56) solid 1px; */
+  padding: 5px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.display > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 9px 0 9px 0;
+  left: 100%;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -34,5 +141,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
