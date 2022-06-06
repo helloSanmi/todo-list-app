@@ -38,6 +38,10 @@ const TodoApp = () => {
         const updatedItem = arr.map((item, index) => {
             return index === currentTodo.id ? currentTodo.text : item
     });
+
+        // if(currentTodo.text.value > 0 && currentTodo != value){
+        //     console.log('Hello')
+        // }
         setIsEditing(false);
         setArr(updatedItem);
       }
@@ -61,7 +65,6 @@ const TodoApp = () => {
                 setValue('');
             }
         }
-
         else {
             setMessage('Please enter your to-do');
             setValue('');
@@ -73,20 +76,20 @@ const TodoApp = () => {
             <p>What will you like To-do:</p>
 
             {isEditing ? (
+                // display for update
                 <div className="form-input">
                     <input type='text' placeholder='Edit todo' value={currentTodo.text} onChange={ handleEditInputChange } />
                     <TodoButton onClick={handleUpdate}>Update Todo</TodoButton>
                 </div>
             ) : 
             (
+            // display for the Add Todo
             <form onSubmit={submit} className="form-input">
                 <input type='text' placeholder='Enter todo' value={value} onChange={handleInputValue} />
                 <TodoButton>Add Todo</TodoButton>
             </form>)}
             
-            <TodoDisplay arr={arr} setArr={setArr} 
-                isEditing={isEditing} setIsEditing={setIsEditing} 
-                    currentTodo={currentTodo} updateValue={updateValue} />
+            <TodoDisplay arr={arr} setArr={setArr} updateValue={updateValue} />
             
             <p>{message}</p>
         </div>

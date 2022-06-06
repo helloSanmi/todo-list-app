@@ -15,14 +15,14 @@ const TodoDisplay = ({ arr, setArr, updateValue }) => {
       {arr.map((val, index) => {
           return (
               <>
-                <ul key={index} className="display">
-                <li key={val} className="styleList">{index + 1}. {val}</li>
-                <div>
-                    <RiCloseCircleLine  onClick={deleteTodo(index)}  className="delete-icon btn-del"/>
-                    <TiEdit className="update-icon btn-del" onClick={updateValue(index, val)} />
-                    {/* <button className="btn-del" type="button" onClick={deleteTodo(index)}>Delete</button> */}
-                    {/* <button className="btn-del" onClick={updateValue(index, val)}>Update</button> */}
-                </div>
+                <ul className="display">
+                  <li key={index.toString()} className="styleList">{index + 1}. {val}</li>
+                  <div>
+                      <RiCloseCircleLine  onClick={deleteTodo(index)}  className="delete-icon btn-del"/>
+                      <TiEdit className="update-icon btn-del" onClick={updateValue(index, val)} />
+                      {/* <button className="btn-del" type="button" onClick={deleteTodo(index)}>Delete</button> */}
+                      {/* <button className="btn-del" onClick={updateValue(index, val)}>Update</button> */}
+                  </div>
                 </ul>
               </>
           )

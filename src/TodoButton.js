@@ -3,11 +3,11 @@ import './App.css';
 
 
 
-const TodoButton = ({children}) => {
+const TodoButton = ({children, onClick}) => {
     
     return(
         <div>
-            <button className="btn" type="submit">{children}</button>
+            <button className="btn" type="submit" onClick={onClick}>{children}</button>
         </div>
     );
 }
