@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck, faPen, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 
-const TodoDisplay = ({ arr, setArr, deleteTodo, updateValue, toggleLine, complete, toggleLineStyle }) => {
+const TodoDisplay = ({ arr, deleteTodo, updateValue, toggleLine, complete, toggleLineStyle }) => {
 
  
 
