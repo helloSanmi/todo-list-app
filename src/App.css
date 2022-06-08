@@ -81,6 +81,12 @@ body {
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
+  transition: width 3s;
+}
+.btn-del:hover{
+  color: rgba(13, 13, 14, 0.911);
+  width: 18px;
+  height: 18px;
 }
 
 .App-logo {
@@ -115,7 +121,7 @@ body {
 }
 
 .styleList {
-  display: flex;
+  /* display: flex; */
   /* border: rgb(28, 28, 56) solid 1px; */
   padding: 5px; 
   margin-top: 5px;
@@ -130,6 +136,9 @@ body {
   left: 100%;
 }
 
+.crossedLine {
+  text-decoration: line-through;
+}
 
 .App-link {
   color: #61dafb;

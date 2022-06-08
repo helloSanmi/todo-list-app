@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TodoButton from "./TodoButton";
 import TodoDisplay from "./TodoDisplay";
 import './App.css';
+// import { faL } from "@fortawesome/free-solid-svg-icons";
 
 
 const TodoApp = () => {
@@ -12,6 +13,7 @@ const TodoApp = () => {
     const [message, setMessage] = useState('');
     const [isEditing, setIsEditing] = useState(false);
     const [currentTodo, setCurrentTodo] = useState({id: null, text: ''});
+    const [complete, setComplete] = useState(false);
 
 
     /* controlled component - get input value */
@@ -38,14 +40,28 @@ const TodoApp = () => {
         const updatedItem = arr.map((item, index) => {
             return index === currentTodo.id ? currentTodo.text : item
     });
-
-        // if(currentTodo.text.value > 0 && currentTodo != value){
-        //     console.log('Hello')
-        // }
         setIsEditing(false);
         setArr(updatedItem);
       }
+
+     /* delete an item from the Display list */
+    const deleteTodo = (index) => {
+        setArr((arr) => arr.filter((_, i) => i !== index));
+    };
+
+
       
+    const toggleLineStyle = (id) => id && complete ? "crossedLine" :  "nothing"
+
+
+    const toggleLine = (id) => {
+        
+        id  ? setComplete(true) : setComplete(false);
+        // arr[id] ? setComplete(true) : setComplete(false);
+        // setArr(mapped);
+        console.log('worked ')
+    }
+
 
     /* submit the value in the input field - Add Todo */
     function submit (e) {
@@ -73,6 +89,7 @@ const TodoApp = () => {
 
     return (
         <div className="todo-app">
+
             <p>What will you like To-do:</p>
 
             {isEditing ? (
@@ -89,9 +106,12 @@ const TodoApp = () => {
                 <TodoButton>Add Todo</TodoButton>
             </form>)}
             
-            <TodoDisplay arr={arr} setArr={setArr} updateValue={updateValue} />
+            <TodoDisplay arr={arr}  updateValue={updateValue} 
+                toggleLine={toggleLine} deleteTodo={deleteTodo}
+                   complete={complete} toggleLineStyle={toggleLineStyle} />
             
             <p>{message}</p>
+
         </div>
     );
 }

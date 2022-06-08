@@ -1,29 +1,44 @@
 import React from "react";
 import "./App.css";
-import {RiCloseCircleLine} from 'react-icons/ri';
-import {TiEdit} from 'react-icons/ti';
+// import {RiCloseCircleLine} from 'react-icons/ri';
+// import {TiEdit} from 'react-icons/ti';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faPen, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faListCheck, faPen, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 
-const TodoDisplay = ({ arr, setArr, updateValue }) => {
+const TodoDisplay = ({ arr, setArr, deleteTodo, updateValue, toggleLine, complete, toggleLineStyle }) => {
 
-  /* delete an item from the Display lisr */
-  const deleteTodo = (index) => () => {
-    setArr((arr) => arr.filter((_, i) => i !== index));
-  };
+ 
 
   return (
     <div>
       {arr.map((val, index) => {
           return (
               <>
-                <ul className="display">
-                  <li key={index.toString()} className="styleList">{index + 1}. {val}</li>
+                <ul key={index.toString()} className="display">
+                  {
+                    complete ? (
+                      <li className={` styleList ${toggleLineStyle(index)}`}>
+                        {/* {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)} */}
+                        {index+1} . {val}
+                      </li>
+                    ) : 
+                    (
+                      <li className={`styleList`}>
+                        {/* {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)} */}
+                        {index+1} . {val}
+                      </li>
+                    )
+                  }
+                  
                   <div>
-
-                      <FontAwesomeIcon icon={faPen} className="update-icon btn-del fa-beat" onClick={updateValue(index, val)}/>
-                      <FontAwesomeIcon icon={faTrash} onClick={deleteTodo(index)}  className="delete-icon btn-del fa-fade" />
+                      <FontAwesomeIcon icon={faPen} className="update-icon btn-del" 
+                          onClick={updateValue(index, val)} />
+                      <FontAwesomeIcon icon={faTrash} onClick={()=>deleteTodo(index)}  
+                          className="delete-icon btn-del" />
+                      <FontAwesomeIcon icon={faListCheck} 
+                          className="btn-del"
+                              onClick={()=>toggleLine(index)}/>
 
                       {/* <RiCloseCircleLine  onClick={deleteTodo(index)}  className="delete-icon btn-del"/> */}
                       {/* <TiEdit className="update-icon btn-del" onClick={updateValue(index, val)} /> */}
