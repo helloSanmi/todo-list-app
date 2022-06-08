@@ -56,10 +56,10 @@ const TodoApp = () => {
 
     const toggleLine = (id) => {
         
-        id  ? setComplete(true) : setComplete(false);
-        // arr[id] ? setComplete(true) : setComplete(false);
-        // setArr(mapped);
-        console.log('worked ')
+        // id  ? setComplete(true) : setComplete(false);
+        // // arr[id] ? setComplete(true) : setComplete(false);
+        // // setArr(mapped);
+        // console.log('worked')
     }
 
 
