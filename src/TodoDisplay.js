@@ -19,14 +19,12 @@ const TodoDisplay = ({ arr, deleteTodo, updateValue, toggleLine, complete, toggl
                   {
                     complete ? (
                       <li className={` styleList ${toggleLineStyle(index)}`}>
-                        {/* {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)} */}
-                        {index+1} . {val}
+                        {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)}
                       </li>
                     ) : 
                     (
                       <li className={`styleList`}>
-                        {/* {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)} */}
-                        {index+1} . {val}
+                        {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)}
                       </li>
                     )
                   }
