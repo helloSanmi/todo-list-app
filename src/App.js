@@ -1,5 +1,5 @@
 import './App.css';
-import TodoApp from './TodoApp';
+import TodoApp from './Components/TodoApp';
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {

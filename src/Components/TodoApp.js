@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TodoButton from "./TodoButton";
 import TodoDisplay from "./TodoDisplay";
-import './App.css';
+import '../App.css';
 // import { faL } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -44,11 +44,11 @@ const TodoApp = () => {
         setArr(updatedItem);
       }
 
+
      /* delete an item from the Display list */
     const deleteTodo = (index) => {
         setArr((arr) => arr.filter((_, i) => i !== index));
     };
-
 
       
     const toggleLineStyle = (id) => id && complete ? "crossedLine" :  "nothing"
@@ -56,10 +56,10 @@ const TodoApp = () => {
 
     const toggleLine = (id) => {
         
-        // id  ? setComplete(true) : setComplete(false);
-        // // arr[id] ? setComplete(true) : setComplete(false);
-        // // setArr(mapped);
-        // console.log('worked')
+        id === currentTodo.id  ? setComplete(true) : setComplete(false);
+        // arr[id] ? setComplete(true) : setComplete(false);
+        // setArr(mapped);
+        console.log('worked')
     }
 
 
