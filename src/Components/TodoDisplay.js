@@ -6,11 +6,11 @@ import { faListCheck, faPen, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const TodoDisplay = ({ arr, deleteTodo, updateValue, toggleLine, complete, toggleLineStyle }) => {
 
-
   return (
     <div>
+     
       {arr.map((val, index) => {
-        console.log(index.toString())
+        
           return (
               <>
                 <ul className="display">
@@ -40,6 +40,7 @@ const TodoDisplay = ({ arr, deleteTodo, updateValue, toggleLine, complete, toggl
               </>
           );
       })}
+
     </div>
   );
 };

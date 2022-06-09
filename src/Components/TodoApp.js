@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import TodoButton from "./TodoButton";
 import TodoDisplay from "./TodoDisplay";
 import '../App.css';
-// import { faL } from "@fortawesome/free-solid-svg-icons";
 
 
 const TodoApp = () => {
@@ -55,9 +54,7 @@ const TodoApp = () => {
 
 
     const toggleLine = (id) => {
-      
-        // id === currentTodo.id  ? setComplete(true) : setComplete(false);
-    
+        // id === currentTodo.id  ? setComplete(true) : setComplete(false)
         console.log(setComplete)
     }
 
@@ -65,7 +62,6 @@ const TodoApp = () => {
     /* submit the value in the input field - Add Todo */
     function submit (e) {
         e.preventDefault();
-
         if (value.length > 0) {
 
             const lowerValue = value.toLowerCase();
@@ -86,6 +82,7 @@ const TodoApp = () => {
         }
     }
 
+    
     return (
         <div className="todo-app">
 
