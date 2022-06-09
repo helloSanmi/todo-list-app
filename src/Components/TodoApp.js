@@ -55,11 +55,10 @@ const TodoApp = () => {
 
 
     const toggleLine = (id) => {
-        
-        id === currentTodo.id  ? setComplete(true) : setComplete(false);
-        // arr[id] ? setComplete(true) : setComplete(false);
-        // setArr(mapped);
-        console.log('worked')
+      
+        // id === currentTodo.id  ? setComplete(true) : setComplete(false);
+    
+        console.log(setComplete)
     }
 
 

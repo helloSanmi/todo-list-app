@@ -10,17 +10,18 @@ const TodoDisplay = ({ arr, deleteTodo, updateValue, toggleLine, complete, toggl
   return (
     <div>
       {arr.map((val, index) => {
+        console.log(index.toString())
           return (
               <>
-                <ul key={val.index} className="display">
+                <ul className="display">
                   {
                     complete ? (
-                      <li className={` styleList ${toggleLineStyle(index)}`}>
+                      <li key={val.toString()} className={` styleList ${toggleLineStyle(index)}`}>
                         {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)}
                       </li>
                     ) : 
                     (
-                      <li className={`styleList`}>
+                      <li key={val.toString()} className={`styleList`}>
                         {index + 1}. {val.charAt(0).toUpperCase() + val.slice(1)}
                       </li>
                     )
