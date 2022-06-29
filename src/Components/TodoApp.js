@@ -18,7 +18,7 @@ const TodoApp = () => {
     /* controlled component - get input value */
     const handleInputValue = (e) => {
         setValue(e.target.value);
-    };
+    }
 
 
     /* change the button to Update Todo, and get the id and value of the update */
