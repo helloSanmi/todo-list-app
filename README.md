@@ -1,3 +1,3 @@
 This Todo-do App was created by:
 
-Oluwasanmi Idowu using ReactJS
+Oluwasanmi Idowu using React JS
