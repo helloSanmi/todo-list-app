@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/todo-list-app/static/css/main.67a83622.css",
+    "main.js": "/todo-list-app/static/js/main.1161ac0f.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/todo-list-app/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/todo-list-app/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/todo-list-app/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/todo-list-app/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/todo-list-app/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/karla-all-500-normal.woff": "/todo-list-app/static/media/karla-all-500-normal.667cee41d4a0f4a2709e.woff",
+    "static/media/karla-all-600-normal.woff": "/todo-list-app/static/media/karla-all-600-normal.7e0fe56d402ddb16b138.woff",
+    "static/media/karla-all-300-normal.woff": "/todo-list-app/static/media/karla-all-300-normal.736f86d4c85b665ab635.woff",
+    "static/media/karla-all-700-normal.woff": "/todo-list-app/static/media/karla-all-700-normal.0181c1abfc125e913789.woff",
+    "static/media/karla-all-400-normal.woff": "/todo-list-app/static/media/karla-all-400-normal.4f7983690c38cb4f5f05.woff",
+    "static/media/karla-all-800-normal.woff": "/todo-list-app/static/media/karla-all-800-normal.a09d5d96662c6f56c77d.woff",
+    "static/media/karla-latin-800-normal.woff2": "/todo-list-app/static/media/karla-latin-800-normal.2337a22b6542b63202cb.woff2",
+    "static/media/karla-latin-600-normal.woff2": "/todo-list-app/static/media/karla-latin-600-normal.2fdc7db631e66a630503.woff2",
+    "static/media/karla-latin-500-normal.woff2": "/todo-list-app/static/media/karla-latin-500-normal.195f27f41a7010409c0b.woff2",
+    "static/media/karla-latin-300-normal.woff2": "/todo-list-app/static/media/karla-latin-300-normal.2de0a5371b8414283bd8.woff2",
+    "static/media/karla-latin-700-normal.woff2": "/todo-list-app/static/media/karla-latin-700-normal.e01d822128c7301005dd.woff2",
+    "static/media/karla-latin-400-normal.woff2": "/todo-list-app/static/media/karla-latin-400-normal.3b748d472b2ea17ac01b.woff2",
+    "static/media/karla-latin-ext-600-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-600-normal.3b7e18783b27ce9b7b04.woff2",
+    "static/media/karla-latin-ext-400-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-400-normal.cfc9908b3c4565f054b8.woff2",
+    "static/media/karla-latin-ext-800-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-800-normal.63a320adc6d9820bf9de.woff2",
+    "static/media/karla-latin-ext-700-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-700-normal.2a753e2ffb486f479ea0.woff2",
+    "static/media/karla-latin-ext-300-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-300-normal.b4abc0ac20c9e9f57904.woff2",
+    "static/media/karla-latin-ext-500-normal.woff2": "/todo-list-app/static/media/karla-latin-ext-500-normal.1adcd1fa3531d9a1b8c6.woff2",
+    "index.html": "/todo-list-app/index.html",
+    "main.67a83622.css.map": "/todo-list-app/static/css/main.67a83622.css.map",
+    "main.1161ac0f.js.map": "/todo-list-app/static/js/main.1161ac0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67a83622.css",
+    "static/js/main.1161ac0f.js"
+  ]
+}
